@@ -4,7 +4,7 @@
 
 This project analyzes real estate listing and sold transaction data from CRMLS, the California Regional Multiple Listing Service. The goal is to clean, aggregate, and analyze MLS data to better understand housing market trends, property sales activity, pricing behavior, and market performance across different locations and property types.
 
-The project uses Python and Pandas for data aggregation, cleaning, validation, and exploratory data analysis. The final cleaned datasets can be used for further analysis, reporting, and dashboard development in Tableau.
+The project uses **Python** and **Pandas** for data aggregation, cleaning, validation, and exploratory data analysis. The final cleaned datasets can support further analysis, reporting, and **Tableau** dashboard development.
 
 ## Objectives
 
