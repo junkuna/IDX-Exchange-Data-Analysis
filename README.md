@@ -4,7 +4,7 @@
 
 This project analyzes real estate listing and sold transaction data from CRMLS, the California Regional Multiple Listing Service. The goal is to clean, aggregate, and analyze MLS data to better understand housing market trends, property sales activity, pricing behavior, and market performance across different locations and property types.
 
-The project uses Python and Pandas for data aggregation, cleaning, validation, and exploratory data analysis. The final cleaned datasets can be used for further analysis, reporting, and dashboard development.
+The project uses Python and Pandas for data aggregation, cleaning, validation, and exploratory data analysis. The final cleaned datasets can be used for further analysis, reporting, and dashboard development in Tableau.
 
 ## Objectives
 
@@ -36,7 +36,28 @@ Consumer-facing platforms such as Zillow and Redfin often receive listing inform
 
 **Metadata**: https://trestle-documentation.corelogic.com/metadata/resources/Property/ 
 
+## Analysis Workflow
+1. This project begins with **Data_Setting** file, where the monthly CRMLS files are imported and consolidated into two main datasets:
 
+- Listing dataset – combines all monthly listing files into one large dataset.
+
+- Sold dataset – combines all monthly sold transaction files into one large dataset.
+
+This step creates a consistent starting point for analysis by organizing the monthly files into two unified datasets before further cleaning and exploration.
+
+2. **sold_analysis** – used to clean, explore, and analyze completed transactions, including price, Days on Market, sale-to-list ratio, county trends, property characteristics, and other sold-market metrics.
+
+3. **listing_analysis** – used to analyze listing-side market conditions, including active inventory, list price, Days on Market, property characteristics, MLS status, and county-level supply patterns.
+
+4. After completing the cleaning and exploratory analysis in sold_analysis and listing_analysis, the final analysis-ready datasets were exported for visualization in Tableau: 
+
+- df_sold_eda_tab — prepared from the sold transaction analysis
+  
+- df_list_eda_tab — prepared from the listing analysis
+
+- **Tableau Profile**: https://public.tableau.com/app/profile/yeonjun.kim7529/vizzes
+
+  
 ## Listings vs. Sold Data
 
 This project keeps listing data and sold data separate because they represent different parts of the real estate market.
